@@ -1,7 +1,7 @@
 def datainserter(nasdaq):
     import csv
     import requests
-    url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol={}&apikey=FZKUGWK1WOQ1A3RY".format(nasdaq)
+    url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol={}&apikey="PutYourKey"".format(nasdaq)
     headerrow = ['date', 'open', 'high', 'low', 'close', 'volume']
     print(url)
     r = requests.get(url)
